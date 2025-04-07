@@ -4,10 +4,7 @@ export const mongoConfig = () => ({
   mongo: {
     client: 'mongodb',
     connection: {
-      connectionString: mongoDbUrl,
-      ssl: {
-        rejectUnauthorized: false,
-      },
+      uri: mongoDbUrl,
     },
   },
 });
