@@ -5,7 +5,7 @@ import { RestaurantSchema } from '../schema/restaurant.schema';
 
 export const RESTAURANT__MODEL = 'RESTAURANT__MODEL';
 
-export const equipmentProviders: IProvider<Model<any>>[] = [
+export const restaurantProviders: IProvider<Model<any>>[] = [
   {
     provide: RESTAURANT__MODEL,
     useFactory: (mongoose: Mongoose): Model<any> => {
